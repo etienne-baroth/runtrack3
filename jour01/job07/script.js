@@ -1,6 +1,6 @@
 function jourtravaille(jour, mois, année) {
 
-let date = new Date(Date.UTC(2020, 0, 1, 0, 0, 0));
+let date = new Date(Date.UTC(2020, 0, 4, 0, 0, 0));
 const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
 let dateLocale = date.toLocaleString('fr-FR', options);
 
@@ -22,14 +22,19 @@ const ferie = [
 
 if(dateLocale === 'samedi' || dateLocale === 'dimanche') {
     console.log(`Non, ${jour} ${mois} ${année} est un weekend`);
-} else if(dateLocale === ferie) {
-    console.log(`le ${jour} ${mois} ${année} est un jour férié`);
+} else{
+
+    for(let i = 0; i<ferie.length; i++) {
+        let dateFerie = ferie[i];
+
+        if(dateFerie === dateLocale) {
+            console.log(`le ${jour} ${mois} ${année} est un jour férié`);
+        } else {
+            console.log(`Oui, ${jour} ${mois} ${année} est un jour travaillé`);
+        }
+    }
 }
 
- else {
-    console.log(`Oui, ${jour} ${mois} ${année} est un jour travaillé`);
 }
 
-}
-
-jourtravaille(1,1,2020);
+jourtravaille(1,4,2020);
