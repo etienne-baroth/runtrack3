@@ -1,11 +1,10 @@
-let année = 366;
+let jourssemaines = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'];
 
-function bisextile(année) {
-    if(année === 366) {
-        return true;
-    } else {
-        return false;
-    }
+function afficherjourssemaines() {
+
+    for(let joursemaine of jourssemaines) {
+    console.log(joursemaine);
+}
 }
 
-console.log(bisextile(année));
+afficherjourssemaines();
