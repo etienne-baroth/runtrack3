@@ -1,10 +1,12 @@
 function jourtravaille(jour, mois, année) {
 
-let date = new Date(Date.UTC(2020, 0, 4, 0, 0, 0));
+let date = new Date(Date.UTC(2020, 0, 1, 0, 0, 0));
 const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
 let dateLocale = date.toLocaleString('fr-FR', options);
 
-console.log(dateLocale);
+// console.log(dateLocale);
+
+let jourDeLaSemaine = date.toLocaleString('fr-FR', { weekday: 'long'} );
 
 const ferie = [
     jourDeLan = new Date(Date.UTC(2020, 0, 1, 0, 0, 0)).toLocaleString('fr-FR', options),
@@ -20,21 +22,23 @@ const ferie = [
     noel = new Date(Date.UTC(2020, 11, 25, 0, 0, 0)).toLocaleString('fr-FR', options)
 ]
 
-if(dateLocale === 'samedi' || dateLocale === 'dimanche') {
-    console.log(`Non, ${jour} ${mois} ${année} est un weekend`);
+if(jourDeLaSemaine === 'samedi' || jourDeLaSemaine === 'dimanche') {
+    console.log(`Non, ${dateLocale} est un weekend`);
 } else{
 
     for(let i = 0; i<ferie.length; i++) {
-        let dateFerie = ferie[i];
+        const dateFerie = ferie[i];
 
         if(dateFerie === dateLocale) {
-            console.log(`le ${jour} ${mois} ${année} est un jour férié`);
+            console.log(`le ${dateLocale} est un jour férié`);
+            break;
         } else {
-            console.log(`Oui, ${jour} ${mois} ${année} est un jour travaillé`);
+            console.log(`Oui, ${dateLocale} est un jour travaillé`);
+            break;
         }
     }
 }
 
 }
 
-jourtravaille(1,4,2020);
+jourtravaille();
