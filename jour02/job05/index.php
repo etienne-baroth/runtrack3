@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>  
-
+    
     <footer></footer>
     <script src="script.js"></script>
 </body>
