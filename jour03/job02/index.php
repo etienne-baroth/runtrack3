@@ -11,16 +11,16 @@
 
 <body>
 
-<button class="btn">Mélanger</button>
-<div class="container" style="width: 800px; height: 500px; border: 1px solid black"></div>
-
-  <div class="mix">
-    <img src="arc1.png" id="arc1">
-    <img src="arc2.png" id="arc2">
-    <img src="arc3.png" id="arc3">
-    <img src="arc4.png" id="arc4">
-    <img src="arc5.png" id="arc5">
-    <img src="arc6.png" id="arc6">
+  <button id="button">Cliquer ici</button>
+  <div id="dessin">
+  </div>
+  <div id="image">
+    <img id="img1" src="arc1.png">
+    <img id="img2" src="arc2.png">
+    <img id="img3" src="arc3.png">
+    <img id="img4" src="arc4.png">
+    <img id="img5" src="arc5.png">
+    <img id="img6" src="arc6.png">
   </div>
 
   <script src="script.js"></script>
