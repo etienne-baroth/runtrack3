@@ -11,27 +11,27 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
-    <button class="btn">Cliquer ici pour afficher</button>
-    <button class="btn-2">Cliquer ici pour cacher</button>
-    <p class="hidden" style="display: none">
-      “Les logiciels et les cathédrales, c'est un peu la même chose - d'abord on
-      les construit, ensuite on prie.”
-    </p>
+
+      <div class="mix">
+        <img src="arc1.png" alt="" id="arc1">
+        <img src="arc2.png" alt="" id="arc2">
+        <img src="arc3.png" alt="" id="arc3">
+        <img src="arc4.png" alt="" id="arc4">
+        <img src="arc5.png" alt="" id="arc5">
+        <img src="arc6.png" alt="" id="arc6">
+      </div>
+    <button class="btn">Mélanger</button>
 
     <script>
       $(document).ready(function () {
 
-        $('.btn').on("click", function () {
-            $('.hidden').show();
-        });
-
-        $('.btn-2').on('click', function() {
-            $('.hidden').hide();
+        $('.btn').on('click', function() {
+          const mix = $('mix').find(img)
+          img.sort()
         })
 
-      });
+      })
     </script>
   </body>
 </html>
