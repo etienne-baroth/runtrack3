@@ -1,0 +1,21 @@
+[
+{"type":"header","version":"5.2.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"utilisateurs"},
+{"type":"table","name":"utilisateurs","database":"utilisateurs","data":
+[
+{"id":"2","nom":"Baroth","prenom":"Etienne","email":"test","password":"test"},
+{"id":"3","nom":"","prenom":"Etienne","email":"test","password":"test"},
+{"id":"4","nom":"","prenom":"Etienne","email":"test","password":"test"},
+{"id":"5","nom":"","prenom":"Etienne","email":"test","password":"test"},
+{"id":"6","nom":"","prenom":"Etienne","email":"test","password":"test"},
+{"id":"7","nom":"","prenom":"","email":"Etienne","password":"Etienne"},
+{"id":"8","nom":"657754","prenom":"","email":"Etienne","password":"Etienne"},
+{"id":"9","nom":"Pierre","prenom":"Jean","email":"mdp","password":"mdp"},
+{"id":"10","nom":"Baroth","prenom":"Etienne","email":"tt","password":"tt"},
+{"id":"11","nom":"Baroth","prenom":"Etienne","email":"tt","password":"tt"},
+{"id":"12","nom":"Baroth","prenom":"Etienne","email":"Abcddddd!!9","password":"Abcddddd!!9"},
+{"id":"13","nom":"Maro","prenom":"Marc","email":"Bravoalpha1!","password":"Bravoalpha1!"},
+{"id":"14","nom":"Malus","prenom":"Marc","email":"test@test","password":"Bravoalpha2!"}
+]
+}
+]
