@@ -1,0 +1,78 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+}
+
+a:not(:nth-child(3)) {
+    margin-right: 2rem;
+}
+
+
+.header-toggler {
+    opacity: 0;
+    position: fixed;
+    z-index: 5;
+    top: 3rem;
+    right: 3rem;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+}
+
+.l1 {
+    transform: translateY(-10px);
+}
+
+.l3 {
+    transform: translateY(10px);
+}
+
+.header-toggler.active .l1 {
+    transform: translateY(0) rotate(135deg);
+}
+
+.header-toggler.active .l2 {
+    opacity: 0;
+}
+
+.header-toggler.active .l3 {
+    transform: translateY(0) rotate(-135deg);
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        transform: translateY(-100%);
+    }
+    header.active {
+        transform: translate(0);
+    }
+    .header-toggler {
+        opacity: 1;
+    }
+}
