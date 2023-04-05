@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +16,9 @@
 
     <header>
         <nav class="bg-red-500 px-2  py-2.5  w-full z-20 top-0 left-0 border-b border-gray-300 ">
-            <div class="container flex  items-center justify-between mx-auto">
+            <div class="container flex  items-center justify-center mx-auto">
 
-                <div class="items-center justify-between  w-full" id="navbar-sticky">
+                <div class="items-center justify-center  w-full" id="navbar-sticky">
                     <ul class="flex flex-row p-4  border border-gray-100 rounded-lg bg-gray-50">
                         <li>
                             <a href="#" class="block py-2 pl-3 pr-4 mr-4 text-white bg-red-500 rounded " aria-current="page">Accueil</a>
@@ -69,11 +69,25 @@
         </div>
     </form>
 
-    <footer>
-        <a href="#">Accueil</a>
-        <a href="#">Inscription</a>
-        <a href="#">Connexion</a>
-        <a href="#">Rechercher</a>
+    <footer class="absolute bottom-0 w-full">
+        <nav class="py-4 bg-gray-600 text-white">
+            <div>
+                <ul class="flex justify-center">
+                    <li>
+                        <a href="#" class="block py-1.5 px-2.5  rounded hover:text-orange-600 hover:bg-white">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-1.5 px-2.5 rounded  hover:text-orange-600 hover:bg-white">Inscription</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-1.5 px-2.5 rounded  hover:text-orange-600 hover:bg-white">Connexion</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-1.5 px-2.5 rounded  hover:text-orange-600 hover:bg-white">Rechercher</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </footer>
 
 </body>
